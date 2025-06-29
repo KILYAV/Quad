@@ -36,8 +36,6 @@ QuadADD proc
 ; if (ax == nan)
 ;	goto exit_nan
 	cmp ax,0fffeh
-	mov edx,0ffffh
-	cmova eax,edx
 ja	exit_nan
 
 ; if (ax == inf)
